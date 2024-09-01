@@ -45,6 +45,13 @@
 .goal-photo-list-item {
   flex-basis: calc((100% - 14px) / 2);
   display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.goal-photo-list-link {
+  width: 100%;
 }
 
 .goal-photo-list-img {
