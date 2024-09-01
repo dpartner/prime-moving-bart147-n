@@ -19,3 +19,7 @@ a {
   cursor: pointer;
   display: inline-block;
 }
+
+address {
+  font-style: normal;
+}
