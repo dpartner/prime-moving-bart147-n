@@ -1,0 +1,31 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item-number-wrap {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.30433;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.gallery-button-icon-wrap {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--text-color);
+  border-radius: 100%;
+  stroke-width: 1px;
+  stroke: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-left-arrow {
+  margin-right: 12px;
+}

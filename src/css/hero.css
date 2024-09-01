@@ -38,7 +38,7 @@
 }
 
 .hero-desc {
-  color: #fff;
+  color: var(--light-color);
 }
 
 .button-icon-arrow {
