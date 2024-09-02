@@ -1,5 +1,6 @@
 .footer-section {
   background-color: var(--text-color);
+  padding-bottom: 0;
 }
 
 .footer-container {
@@ -64,4 +65,30 @@
   text-align: center;
   color: var(--light-color);
   margin-bottom: 25px;
+}
+
+.footer-button {
+  margin-bottom: 65px;
+}
+
+.privacy-wrap {
+  padding: 20px 0;
+  border-top: 1px solid var(--light-color);
+}
+
+.privacy-text {
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 1.30433;
+  text-align: center;
+  color: var(--light-color);
+}
+
+.privacy-text a {
+  display: inline;
+  color: inherit;
+}
+
+.privacy-text a:first-child {
+  text-decoration: underline;
 }
