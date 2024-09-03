@@ -113,6 +113,10 @@ img {
   text-align: center;
 }
 
+.faq-button-icon {
+  pointer-events: none;
+}
+
 .button-icon-arrow {
   fill: var(--accent-color);
 }
