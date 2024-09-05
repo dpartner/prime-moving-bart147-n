@@ -71,3 +71,21 @@ let galleryItemCount = 0;
 domElements.expGalleryButtonsWrap.addEventListener('click', ev => {
   galleryItemCount = handleGallery(ev, domElements, galleryItemCount);
 });
+
+// Swipe gallery
+let touchstartX = 0;
+let touchendX = 0;
+
+function checkDirection() {
+  if (touchendX < touchstartX) alert('swiped left!');
+  if (touchendX > touchstartX) alert('swiped right!');
+}
+
+domElements.expGalleryList.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX;
+});
+
+domElements.expGalleryList.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection();
+});
