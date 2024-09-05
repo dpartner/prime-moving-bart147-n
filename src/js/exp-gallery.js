@@ -37,7 +37,7 @@ export const handleGallery = (
 
 export const handleGallerySwipe = (
   direction,
-  { expGalleryList, expGalleryItem },
+  { expGalleryList, expGalleryItem, expGalleryNumberItem },
   galleryItemCount
 ) => {
   const galleryItemWidth = expGalleryItem.offsetWidth;
