@@ -67,7 +67,7 @@ flatpickr('#date', {
 });
 
 // Experiense section gallery handle
-let galleryItemCount = 1;
+let galleryItemCount = 0;
 domElements.expGalleryButtonsWrap.addEventListener('click', ev => {
   galleryItemCount = handleGallery(ev, domElements, galleryItemCount);
 });
