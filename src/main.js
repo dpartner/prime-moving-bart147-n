@@ -20,6 +20,8 @@ const domElements = {
   expGalleryButtonsWrap: document.querySelector('.gallery-arrow-wrap'),
   expGalleryList: document.querySelector('.experience-gallery-list'),
   expGalleryItem: document.querySelector('.experience-gallery-item'),
+  expGalleryNumberItem: document.querySelector('[data-gallery="count"]'),
+  expGalleryNumberLength: document.querySelector('[data-gallery="length"]'),
 };
 
 // Open Mobile Menu
@@ -67,6 +69,9 @@ flatpickr('#date', {
 });
 
 // Experiense section gallery handle
+domElements.expGalleryNumberLength.textContent =
+  domElements.expGalleryList.children.length;
+
 let galleryItemCount = 0;
 domElements.expGalleryButtonsWrap.addEventListener('click', ev => {
   galleryItemCount = handleGallery(ev, domElements, galleryItemCount);

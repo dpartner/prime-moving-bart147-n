@@ -1,6 +1,6 @@
 export const handleGallery = (
   ev,
-  { expGalleryList, expGalleryItem },
+  { expGalleryList, expGalleryItem, expGalleryNumberItem },
   galleryItemCount
 ) => {
   const rightArrow = 'gallery-right-arrow';
@@ -14,6 +14,7 @@ export const handleGallery = (
       return galleryItemCount;
     }
     galleryItemCount += 1;
+    expGalleryNumberItem.textContent = galleryItemCount + 1;
     padding *= galleryItemCount;
     expGalleryList.style.transform = `translateX(-${
       galleryItemWidth * galleryItemCount + padding
@@ -25,6 +26,7 @@ export const handleGallery = (
       return (galleryItemCount = 0);
     }
     galleryItemCount -= 1;
+    expGalleryNumberItem.textContent = galleryItemCount + 1;
     padding *= galleryItemCount;
     expGalleryList.style.transform = `translateX(-${
       galleryItemWidth * galleryItemCount + padding
@@ -47,6 +49,7 @@ export const handleGallerySwipe = (
       return galleryItemCount;
     }
     galleryItemCount += 1;
+    expGalleryNumberItem.textContent = galleryItemCount + 1;
     padding *= galleryItemCount;
     expGalleryList.style.transform = `translateX(-${
       galleryItemWidth * galleryItemCount + padding
@@ -58,6 +61,7 @@ export const handleGallerySwipe = (
       return (galleryItemCount = 0);
     }
     galleryItemCount -= 1;
+    expGalleryNumberItem.textContent = galleryItemCount + 1;
     padding *= galleryItemCount;
     expGalleryList.style.transform = `translateX(-${
       galleryItemWidth * galleryItemCount + padding
