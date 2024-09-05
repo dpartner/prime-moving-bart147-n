@@ -233,6 +233,7 @@ textarea.modal-input::placeholder {
 
 .flatpickr-wrapper {
   width: 100%;
+  display: block;
 }
 
 .modal-terms-wrap {
