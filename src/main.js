@@ -77,18 +77,24 @@ let touchstartX = 0;
 let touchendX = 0;
 
 function checkDirection() {
-  if (touchendX < touchstartX)
+  if (touchendX < touchstartX) {
     galleryItemCount = handleGallerySwipe(
       'left',
       domElements,
       galleryItemCount
     );
-  if (touchendX > touchstartX)
+    touchstartX = 0;
+    touchendX = 0;
+  }
+  if (touchendX > touchstartX) {
     galleryItemCount = handleGallerySwipe(
       'right',
       domElements,
       galleryItemCount
     );
+    touchstartX = 0;
+    touchendX = 0;
+  }
 }
 
 domElements.expGalleryList.addEventListener('touchstart', e => {

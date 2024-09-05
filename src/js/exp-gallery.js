@@ -38,8 +38,6 @@ export const handleGallerySwipe = (
   { expGalleryList, expGalleryItem },
   galleryItemCount
 ) => {
-  const rightArrow = 'gallery-right-arrow';
-  const leftArrow = 'gallery-left-arrow';
   const galleryItemWidth = expGalleryItem.offsetWidth;
   const galleryItemLenght = expGalleryList.children.length;
   let padding = 15;
