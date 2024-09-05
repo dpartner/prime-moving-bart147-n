@@ -9,9 +9,13 @@ const domElements = {
   mobMenu: document.querySelector('.mobile-menu'),
   faqList: document.querySelector('.faq-list'),
   faqAnswer: document.querySelectorAll('.faq-list-item-answer'),
+  modalBackDrop: document.querySelector('.modal-backdrop'),
   modalForm: document.querySelector('.modal-form'),
+  modalCloseButton: document.querySelector('.modal-close-button'),
   modalServiceSelect: document.querySelector('[data-listname="service"]'),
-  modalRequirementSelect: document.querySelector('[data-listname="service"]'),
+  modalRequirementSelect: document.querySelector(
+    '[data-listname="requirement"]'
+  ),
 };
 
 domElements.mobMenuButton.addEventListener('click', () => {
@@ -32,10 +36,21 @@ domElements.modalForm.addEventListener('click', ev => {
   }
 });
 
+domElements.modalCloseButton.addEventListener('click', () =>
+  domElements.modalBackDrop.classList.add('is-hidden')
+);
+
+document.querySelector('body').addEventListener('click', ev => {
+  if (ev.target.dataset.set === 'open-modal') {
+    domElements.modalBackDrop.classList.remove('is-hidden');
+  }
+});
+
 flatpickr('#date', {
-  position: 'below',
+  position: 'below center',
   onChange: function (selectedDates, dateStr, instance) {
     console.log(dateStr);
   },
   minDate: Date.now(),
+  static: true,
 });
