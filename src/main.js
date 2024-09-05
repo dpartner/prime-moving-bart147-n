@@ -1,7 +1,7 @@
 import toogleMobMenu from './js/mob-menu';
 import shownFaqAnswer from './js/faq';
 import { handleSelect } from './js/select';
-import handleGallery from './js/exp-gallery';
+import { handleGallery, handleGallerySwipe } from './js/exp-gallery';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -77,8 +77,10 @@ let touchstartX = 0;
 let touchendX = 0;
 
 function checkDirection() {
-  if (touchendX < touchstartX) alert('swiped left!');
-  if (touchendX > touchstartX) alert('swiped right!');
+  if (touchendX < touchstartX)
+    handleGallerySwipe('left', domElements, galleryItemCount);
+  if (touchendX > touchstartX)
+    handleGallerySwipe('right', domElements, galleryItemCount);
 }
 
 domElements.expGalleryList.addEventListener('touchstart', e => {
