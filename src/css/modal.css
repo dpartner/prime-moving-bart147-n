@@ -65,7 +65,7 @@
   border-radius: 8px;
   height: 40px;
   width: 100%;
-  padding: 6px 10px 6px 35px;
+  padding: 6px 10px 6px 40px;
 }
 
 .modal-input:hover,
@@ -80,22 +80,12 @@
 }
 
 .modal-input.select {
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-  width: 100%;
-  display: block;
-}
-
-option {
-  position: relative;
-  height: 0;
-  display: none;
+  caret-color: transparent;
 }
 
 .custom-select-option-wrap {
   position: absolute;
-  top: 35px;
+  top: 50px;
   left: 0;
   background-color: var(--light-color);
   z-index: 10;
@@ -112,22 +102,24 @@ option {
   max-height: 100px;
   padding: 10px 18px;
 }
+.custom-select-option-wrap.is-show ~ .modal-input-icon {
+  transform: rotate(180deg);
+}
 
-.select-focus {
-  color: #2e2f42;
+.select-custom-list-item {
+  color: var(--text-color);
   display: block;
   margin: 0;
   font-weight: 400;
   font-size: 9px;
   line-height: 1.55556;
   letter-spacing: 0.04em;
-  color: #2a3d5e;
   pointer-events: visible;
   cursor: pointer;
 }
 
-.select-focus:hover,
-.select-focus:focus {
+.select-custom-list-item:hover,
+.select-custom-list-item:focus {
   background: #ececec;
   opacity: 0.8;
 }
@@ -146,6 +138,7 @@ option {
   position: absolute;
   top: 26px;
   left: 12px;
+  transition: transform 0.5s ease-in;
 }
 
 .modal-input-icon.modal-input-icon-arrow {

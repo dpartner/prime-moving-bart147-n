@@ -603,23 +603,19 @@
             </svg>
           </div>
           <div class="modal-input-wrap">
-            <div class="select-wrap">
-              <select
-                class="modal-input select"
-                name="service"
-                id="service"
-                required
-              >
-                <option value="notselected" selected disabled></option>
-                <option value="xs">Extra Small</option>
-                <option value="s">Small</option>
-                <option value="m">Medium</option>
-                <option value="l">Large</option>
-              </select>
-              <div class="custom-select-option-wrap">
-                <span class="select-focus">Check this</span>
-              </div>
-            </div>
+            <input
+              class="modal-input select"
+              type="text"
+              name="service"
+              id="service"
+              required
+              maxlength="50"
+              data-type="customSelect"
+            />
+            <div
+              class="custom-select-option-wrap"
+              data-listname="service"
+            ></div>
 
             <label class="modal-input-label" for="service">Service</label>
             <svg
@@ -632,13 +628,19 @@
           </div>
           <div class="modal-input-wrap">
             <input
-              class="modal-input"
+              class="modal-input select"
               type="text"
-              name="specify"
-              id="specify"
+              name="requirement"
+              id="requirement"
               required
+              maxlength="50"
+              data-type="customSelect"
             />
-            <label class="modal-input-label" for="specify"
+            <div
+              class="custom-select-option-wrap"
+              data-listname="requirement"
+            ></div>
+            <label class="modal-input-label" for="requirement"
               >Please Specify Your Requirement</label
             >
             <svg
