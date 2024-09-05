@@ -1,6 +1,7 @@
 import toogleMobMenu from './js/mob-menu';
 import shownFaqAnswer from './js/faq';
 import { handleSelect } from './js/select';
+import handleGallery from './js/exp-gallery';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -16,16 +17,22 @@ const domElements = {
   modalRequirementSelect: document.querySelector(
     '[data-listname="requirement"]'
   ),
+  expGalleryButtonsWrap: document.querySelector('.gallery-arrow-wrap'),
+  expGalleryList: document.querySelector('.experience-gallery-list'),
+  expGalleryItem: document.querySelector('.experience-gallery-item'),
 };
 
+// Open Mobile Menu
 domElements.mobMenuButton.addEventListener('click', () => {
   toogleMobMenu(domElements);
 });
 
+// FAQ open answers handle
 domElements.faqList.addEventListener('click', ev => {
   shownFaqAnswer(ev, domElements);
 });
 
+// Custom select handle
 domElements.modalForm.addEventListener('click', ev => {
   if (ev.target.dataset.type === 'customSelect') {
     const listName = ev.target.name;
@@ -36,16 +43,19 @@ domElements.modalForm.addEventListener('click', ev => {
   }
 });
 
+// Close Modal form
 domElements.modalCloseButton.addEventListener('click', () =>
   domElements.modalBackDrop.classList.add('is-hidden')
 );
 
+// Open Modal form
 document.querySelector('body').addEventListener('click', ev => {
   if (ev.target.dataset.set === 'open-modal') {
     domElements.modalBackDrop.classList.remove('is-hidden');
   }
 });
 
+// Adding custom calendar in Modal Form
 flatpickr('#date', {
   position: 'below center',
   onChange: function (selectedDates, dateStr, instance) {
@@ -54,4 +64,10 @@ flatpickr('#date', {
   minDate: Date.now(),
   static: true,
   disableMobile: true,
+});
+
+// Experiense section gallery handle
+let galleryItemCount = 1;
+domElements.expGalleryButtonsWrap.addEventListener('click', ev => {
+  galleryItemCount = handleGallery(ev, domElements, galleryItemCount);
 });
