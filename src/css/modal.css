@@ -25,6 +25,7 @@
   background: var(--light-color);
   border-radius: 8px;
   max-height: 90%;
+  width: calc(100% - 32px);
   position: absolute;
   top: 50%;
   left: 50%;

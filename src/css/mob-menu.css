@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-color);
-  z-index: 995;
+  z-index: 988;
   padding: 80px 40px 48px 40px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out, opacity 350ms ease-in-out;
