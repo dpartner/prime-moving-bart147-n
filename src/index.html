@@ -538,6 +538,121 @@
         </li>
       </ul>
     </div>
+    <!-- -----------MODAL------------ -->
+    <div class="modal-backdrop">
+      <div class="modal-container">
+        <button class="modal-close-button"></button>
+        <p class="modal-heading">
+          Leave a request and we will get back to you!
+        </p>
+        <form class="modal-form" action="" novalidate>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+            <label class="modal-input-label" for="name">First/Last Name</label>
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./img/svg/symbol-defs.svg#icon-modal-name"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="phone"
+              id="phone"
+              required
+            />
+            <label class="modal-input-label" for="phone">Phone</label>
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./img/svg/symbol-defs.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="email"
+              id="mail"
+              required
+            />
+            <label class="modal-input-label" for="mail">Email</label>
+            <svg class="modal-input-icon" width="24" height="24">
+              <use href="./img/svg/symbol-defs.svg#icon-modal-mail"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="date"
+              id="date"
+              required
+            />
+            <label class="modal-input-label" for="date">Your Moving Date</label>
+            <svg
+              class="modal-input-icon modal-input-icon-date"
+              width="18"
+              height="18"
+            >
+              <use href="./img/svg/symbol-defs.svg#icon-modal-date"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrap">
+            <div class="select-wrap">
+              <select
+                class="modal-input select"
+                name="service"
+                id="service"
+                required
+              >
+                <option value="notselected" selected disabled></option>
+                <option value="xs">Extra Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+              </select>
+              <div class="custom-select-option-wrap">
+                <span class="select-focus">Check this</span>
+              </div>
+            </div>
+
+            <label class="modal-input-label" for="service">Service</label>
+            <svg
+              class="modal-input-icon modal-input-icon-arrow"
+              width="24"
+              height="24"
+            >
+              <use href="./img/svg/symbol-defs.svg#icon-modal-arrow"></use>
+            </svg>
+          </div>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="text"
+              name="specify"
+              id="specify"
+              required
+            />
+            <label class="modal-input-label" for="specify"
+              >Please Specify Your Requirement</label
+            >
+            <svg
+              class="modal-input-icon modal-input-icon-arrow"
+              width="24"
+              height="24"
+            >
+              <use href="./img/svg/symbol-defs.svg#icon-modal-arrow"></use>
+            </svg>
+          </div>
+          <button class="modal-submit-button" type="submit"></button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
