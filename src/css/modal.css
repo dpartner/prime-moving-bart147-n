@@ -136,6 +136,7 @@ textarea.modal-input::placeholder {
 
 .modal-input.select {
   caret-color: transparent;
+  cursor: pointer;
 }
 
 .custom-select-option-wrap {
@@ -231,7 +232,7 @@ textarea.modal-input::placeholder {
   padding: 19px 75px;
 }
 
-.flatpickr-wrapper {
+div.flatpickr-wrapper {
   width: 100%;
   display: block;
 }

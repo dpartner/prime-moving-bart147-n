@@ -53,4 +53,5 @@ flatpickr('#date', {
   },
   minDate: Date.now(),
   static: true,
+  disableMobile: true,
 });

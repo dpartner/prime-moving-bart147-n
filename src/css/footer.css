@@ -34,7 +34,7 @@
 }
 
 .contact-button-icon {
-  /* fill: var(--light-color); */
+  fill: var(--light-color);
 }
 
 .contact-link {
@@ -43,6 +43,25 @@
   line-height: 1.30433;
   text-align: center;
   color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover .contact-icon-wrap,
+.contact-link:focus .contact-icon-wrap {
+  background-color: var(--light-color);
+}
+
+.contact-link:hover .contact-button-icon,
+.contact-link:focus .contact-button-icon {
+  fill: var(--accent-color);
 }
 
 .footer-logo-link {
