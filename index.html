@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/prime-moving-bart147-n/index.js"></script>
     <link rel="modulepreload" crossorigin href="/prime-moving-bart147-n/assets/vendor-EyZmBGcZ.js">
     <link rel="stylesheet" crossorigin href="/prime-moving-bart147-n/assets/vendor-BArvkMiJ.css">
-    <link rel="stylesheet" crossorigin href="/prime-moving-bart147-n/assets/index-CVYXYHlN.css">
+    <link rel="stylesheet" crossorigin href="/prime-moving-bart147-n/assets/index-DlBojmTT.css">
   </head>
   <body>
     <header>
@@ -44,7 +44,7 @@
           <p class="hero-desc">
             Reliable and fast transportation of belongings from your home
           </p>
-          <button class="button-primary">
+          <button class="button-primary" data-set="open-modal">
             Get a quote
             <svg class="button-icon-arrow" width="3" height="5">
               <use href="/prime-moving-bart147-n/assets/symbol-defs-Cl_suS3D.svg#icon-forward-arrow" />
@@ -157,7 +157,7 @@
               additional care while moving and packing the products.
             </p>
           </div>
-          <button class="button-primary button-mb">
+          <button class="button-primary button-mb" data-set="open-modal">
             Get a quote
             <svg class="button-icon-arrow" width="3" height="5">
               <use href="/prime-moving-bart147-n/assets/symbol-defs-Cl_suS3D.svg#icon-forward-arrow" />
@@ -440,7 +440,7 @@
           </a>
           <p class="footer-first-desc">We Carry Your World!</p>
           <p class="footer-second-desc">Start Your Estimate</p>
-          <button class="button-primary footer-button">
+          <button class="button-primary footer-button" data-set="open-modal">
             Get a quote
             <svg class="button-icon-arrow" width="3" height="5">
               <use href="/prime-moving-bart147-n/assets/symbol-defs-Cl_suS3D.svg#icon-forward-arrow" />
@@ -542,7 +542,7 @@
       </ul>
     </div>
     <!-- -----------MODAL------------ -->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-hidden">
       <div class="modal-container">
         <button class="modal-close-button"></button>
         <p class="modal-heading">
@@ -654,7 +654,36 @@
               <use href="/prime-moving-bart147-n/assets/symbol-defs-Cl_suS3D.svg#icon-modal-arrow"></use>
             </svg>
           </div>
-          <button class="modal-submit-button" type="submit"></button>
+          <div class="modal-input-wrap">
+            <textarea
+              class="modal-input"
+              type="comment"
+              name="comment"
+              id="comment"
+              placeholder="Please include: Additional Comments"
+            ></textarea>
+            <label class="modal-input-label" for="comment">Comment</label>
+          </div>
+          <div class="modal-terms-wrap">
+            <input
+              type="checkbox"
+              class="terms-checkbox-hidden"
+              name="terms-checkbox"
+              id="terms-checkbox"
+            />
+            <label class="terms-checkbox-label" for="terms-checkbox">
+              <span class="terms-checkbox-box">
+                <svg class="terms-checkbox-icon" width="10" height="8">
+                  <use href="/prime-moving-bart147-n/assets/symbol-defs-Cl_suS3D.svg#icon-modal-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="./" class="terms-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="button-primary modal-submit-button" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>
