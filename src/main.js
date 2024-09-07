@@ -7,8 +7,10 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
 // Render dynamyc elements
-document.querySelector('.experience-gallery-list').innerHTML =
-  addGalleryImg(GalleryLibrary);
+// document.querySelector('.experience-gallery-list').innerHTML =
+//   addGalleryImg(GalleryLibrary);
+
+// console.log(addGalleryImg(GalleryLibrary));
 
 const domElements = {
   mobMenuButton: document.querySelector('.mob-menu-button'),
