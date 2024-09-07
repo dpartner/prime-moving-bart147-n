@@ -2,8 +2,13 @@ import toogleMobMenu from './js/mob-menu';
 import shownFaqAnswer from './js/faq';
 import { handleSelect } from './js/select';
 import { handleGallery, handleGallerySwipe } from './js/exp-gallery';
+import { addGalleryImg, GalleryLibrary } from './js/add-gallery';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+
+// Render dynamyc elements
+document.querySelector('.experience-gallery-list').innerHTML =
+  addGalleryImg(GalleryLibrary);
 
 const domElements = {
   mobMenuButton: document.querySelector('.mob-menu-button'),

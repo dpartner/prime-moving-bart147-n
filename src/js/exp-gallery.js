@@ -7,6 +7,11 @@ export const handleGallery = (
   const leftArrow = 'gallery-left-arrow';
   const galleryItemWidth = expGalleryItem.offsetWidth;
   const galleryItemLenght = expGalleryList.children.length;
+  // const galleryItemWidth = document.querySelector(
+  //   '.experience-gallery-item'
+  // ).offsetWidth;
+  // const galleryItemLenght = document.querySelector('.experience-gallery-list')
+  //   .children.length;
   let padding = 15;
 
   if (ev.target.classList.contains(rightArrow)) {
