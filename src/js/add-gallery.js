@@ -6,10 +6,10 @@ export const addGalleryImg = GalleryLibrary => {
                   <img
                     class="experience-gallery-img"
                     srcset="
-                      ./img/exp-gallery/${img.defaultImg} 1x,
-                      ./img/exp-gallery/${img.retinaImg} 2x
+                      ${img.defaultImg} 1x,
+                      ${img.retinaImg} 2x
                     "
-                    src="./img/exp-gallery/gallery-mob-1@1x.webp"
+                    src="${img.defaultImg}"
                     alt="${img.alt}"
                   />
                 </a>
