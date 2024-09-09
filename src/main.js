@@ -2,7 +2,8 @@ import toogleMobMenu from './js/mob-menu';
 import shownFaqAnswer from './js/faq';
 import { handleSelect } from './js/select';
 import { handleGallery, handleGallerySwipe } from './js/exp-gallery';
-import { addGalleryImg, GalleryLibrary } from './js/add-gallery';
+// import { addGalleryImg, GalleryLibrary } from './js/add-gallery';
+import showPolicy from './js/policy';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
@@ -11,6 +12,8 @@ import 'flatpickr/dist/flatpickr.min.css';
 //   addGalleryImg(GalleryLibrary);
 
 // console.log(addGalleryImg(GalleryLibrary));
+
+showPolicy();
 
 const domElements = {
   mobMenuButton: document.querySelector('.mob-menu-button'),

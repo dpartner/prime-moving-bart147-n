@@ -1,0 +1,20 @@
+.policy-popup {
+  position: fixed;
+  bottom: 20px;
+  z-index: 999;
+  background-color: antiquewhite;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.policy-popup.hidden {
+  display: none;
+}
+
+.policy-text {
+  width: 100%;
+}
+
+.policy-link {
+  display: inline;
+}
